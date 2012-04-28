@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="cola.js"></script>
+    <style>
+        button{display:block;}
+    </style>
+</head>
+<body>
+    <div class="main"><div></div>
+        <span></span>
+        <div></div>
+        <div></div>
+        <span></span>
+    </div>
+    <div id="main">
+        <div>
+            <div class="list"></div>
+            <div class="list"></div>
+            <span></span>
+            <div class="list"></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+    <button onclick="q1();">.mian div:first-child</button>
+    <button onclick="q2();">#main div.list ~ div.list</button>
+<script>
+    var log = console.log;
+    var q2 = function(){
+        var r = cola.query('#main div.list + div,#main div.list ~ div.list');
+        log(r);
+    }
+</script>
+</body>
+</html>
