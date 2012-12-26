@@ -22,3 +22,7 @@ cola
 -   多组选择符(,)后的排序、排重。
 -   支持querySelectorAll方的浏览器中使用此方法。
 -   性能优化。
+
+## License ##
+
+All directories and files are MIT Licensed.
